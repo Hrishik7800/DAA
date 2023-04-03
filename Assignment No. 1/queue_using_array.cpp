@@ -15,6 +15,7 @@ bool isempty()
 }
 
 void enqueue ( int value )
+
 {
  if (rear == SIZE-1){
       cout<<"Queue is full \n";
@@ -49,15 +50,19 @@ void dequeue ( )
 
 void showfront( )
 {
+
  if( isempty())
   cout<<"Queue is empty\n";
  else
   cout<<"element at front is:"<<A[front]<<"\n";
+
+
 }
 
 
 void displayQueue()
 {
+
  if(isempty())
   cout<<"Queue is empty\n";
  else
@@ -66,6 +71,7 @@ void displayQueue()
    cout<<A[i]<<" ";
   cout<<"\n";
  }
+
 }
 
 

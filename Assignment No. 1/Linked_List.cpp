@@ -6,7 +6,7 @@ struct Node{
 };
 struct Node* tail = NULL;
 struct Node* head = tail ;
-void AddatFirst(int val){
+void AddatFirfst(int val){
       struct Node* temp = new struct Node();
         temp ->  data = val;
         temp -> next = head;
