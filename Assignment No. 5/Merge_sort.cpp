@@ -32,7 +32,9 @@ void conquer(int arr[], int left, int mid, int right){
     }
 
     while(indx2 <= right){
+
         ans[x++] = arr[indx2++];
+        
     }
 
     for( int i = 0, j = left; i < x; i++, j++){
