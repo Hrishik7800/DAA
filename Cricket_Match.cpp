@@ -18,22 +18,10 @@ cin.tie(NULL);
 ll t;
 cin>>t;
 while(t--){
-    ll n;
-     cin>>n;
-     ll a[n];
-     a[n-1] = 1;
-     a[0] = n;
-     if(n == 1){
-        cout<<1<<endl;
-     }
-     else if(n%2 != 0){
-        cout<<-1<<endl;
-     }else{
-        cout<<n<<" ";
-        for( int i = n -1; i > 2; i-=2){
-            cout<<i<<" "<<n-1-i<<" ";
-        }    
-     }
+     ll n ,m ;
+     cin>>n>>m;
+     if(n <= m*6*6) cout<<"YES"<<endl;
+     else cout<<"NO"<<endl;
 }
-     return 0;
+return 0;
 }

@@ -18,22 +18,17 @@ cin.tie(NULL);
 ll t;
 cin>>t;
 while(t--){
-    ll n;
+     ll n;
      cin>>n;
      ll a[n];
-     a[n-1] = 1;
-     a[0] = n;
-     if(n == 1){
-        cout<<1<<endl;
+     for( int i = 0; i < n; i++){
+        cin>>a[i];
      }
-     else if(n%2 != 0){
-        cout<<-1<<endl;
-     }else{
-        cout<<n<<" ";
-        for( int i = n -1; i > 2; i-=2){
-            cout<<i<<" "<<n-1-i<<" ";
-        }    
+     ll ans = INT_MAX;
+     for( int i = 1 ;i < n; i++){
+            ans = min(ans, abs(a[i] - a[i-1]));
      }
+     cout<<ans<<endl;
 }
-     return 0;
+return 0;
 }

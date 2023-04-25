@@ -1,0 +1,1 @@
+{"name":"Local: DFS","url":"e:\\3rd Year\\DAA Assignment\\Assignment No. 6\\DFS.cpp","tests":[{"id":1682352800661,"input":"4\n1\n2\n3\n6","output":"26\n37\n50\n32105178545472401"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\3rd Year\\DAA Assignment\\Assignment No. 6\\DFS.cpp","group":"local","local":true}

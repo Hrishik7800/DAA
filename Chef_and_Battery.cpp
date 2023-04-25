@@ -18,22 +18,23 @@ cin.tie(NULL);
 ll t;
 cin>>t;
 while(t--){
-    ll n;
+     ll n;
      cin>>n;
-     ll a[n];
-     a[n-1] = 1;
-     a[0] = n;
-     if(n == 1){
-        cout<<1<<endl;
+     
+     if(n == 50 ) cout<<0<<endl;
+     else if(n > 50) {
+        n = abs(50 - n);
+        if(n % 3 == 0) cout<<n/3<<endl;
+        else if(n % 3 == 1) cout<< n/3 + 2 <<endl;
+        else if(n % 3 == 2) cout<< n/3 + 3 <<endl;
+
      }
-     else if(n%2 != 0){
-        cout<<-1<<endl;
-     }else{
-        cout<<n<<" ";
-        for( int i = n -1; i > 2; i-=2){
-            cout<<i<<" "<<n-1-i<<" ";
-        }    
+     else {
+        n = abs(50 - n);
+        if(n %2 == 0) cout<<n/2<<endl;
+        else cout<< (n+1)/2 + 2<<endl;
      }
+
 }
-     return 0;
+return 0;
 }
